@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="caidan" unicode="&#60145;" d="M170.666667 682.666667h682.666666v-85.333334H170.666667V682.666667z m0-512h682.666666v-85.333334H170.666667v85.333334z m0 256h682.666666v-85.333334H170.666667v85.333334z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="guanbi" unicode="&#60146;" d="M576 384l277.333333-277.333333-64-64-277.333333 277.333333L234.666667 42.666667 170.666667 106.666667l277.333333 277.333333L170.666667 661.333333 234.666667 725.333333l277.333333-277.333333L789.333333 725.333333 853.333333 661.333333 576 384z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>
