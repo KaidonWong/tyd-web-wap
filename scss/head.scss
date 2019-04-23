@@ -1,59 +1,71 @@
 @media screen and (orientation: portrait) {
-    /*竖屏 css*/
-    .header {
-        .title {
-            visibility: hidden;
-        }
-    }
+	/*竖屏 css*/
+	.header {
+		.title {
+			visibility: hidden;
+		}
+	}
 }
 @media screen and (orientation: landscape) {
-    /*横屏 css*/
-    .header {
-        .title {
-            visibility: visible;
-        }
-    }
+	/*横屏 css*/
+	.header {
+		.title {
+			visibility: visible;
+		}
+	}
 }
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
-html,body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+    width:100%;
+    overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
 }
 .header {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
-    .logo {
-        margin: 10px;
-        width: 90px;
-        height: 60%;
-        background: url("../asset/logo.png") no-repeat;
-        background-size: 100% 100%;
-    }
-    .title {
-        font-size: 1.2em;
-        color: #d40e10;
-    }
-    span {
-        margin: 10px;
-        font-size: 2em;
-        color: #9d9d9d;
-    }
-
-}
-.submenu {
-    // position: absolute;
-   // right: 0px;
-   width: 300px;
-   height: 500px;
-   font-size: 1.3em;
-   
-   background-color: rgba($color: #000000, $alpha: 0.7);
-   div {
-    line-height: 2;
-   }
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	.logo {
+		margin: 10px;
+		width: 90px;
+		height: 64%;
+		background: url("../asset/logo.png") no-repeat;
+		background-size: 100% 100%;
+	}
+	.title {
+		font-size: 1.2em;
+		color: #d40e10;
+	}
+	span {
+		margin: 10px;
+		font-size: 2em;
+		color: #9d9d9d;
+	}
+	.submenu {
+        position: absolute;
+        z-index: 1;
+        top: 50px;
+		right: -160px;
+		width: 160px;
+		font-size: 1.2em;
+		background-color: rgba($color: #000000, $alpha: 0.7);
+        transition: right 0.3s ease-in-out;
+        div {
+            color: #ffffff;
+            margin: 20px;
+        }
+        &.active {
+            right: 0px;
+        }
+	}
 }

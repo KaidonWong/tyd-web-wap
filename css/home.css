@@ -1,7 +1,53 @@
-.ban {
-  background: url("../asset/ban_index01.jpg") no-repeat;
-  background-size: cover;
-  padding-top: 50%;
+.banners {
+  width: calc(100% * 5);
+}
+.banners .banner {
+  float: left;
+  width: calc(100% / 5);
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+.banners .banner .img-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%;
+}
+.banners .banner .img-container > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+.solution .title {
+  width: 200px;
+  margin: 0 auto;
+}
+.solution .title > div {
+  text-align: center;
+}
+.solution .title > div:nth-of-type(1) {
+  font-size: 1.2em;
+}
+.solution .title > div:nth-of-type(2) {
+  color: #999999;
+  font-size: 0.9em;
+}
+.solution .title > div:nth-of-type(3) {
+  height: 2px;
+  width: 50px;
+  margin: 7px auto 0 auto;
+  background-color: #d40e10;
+}
+.solution .icons-panel {
+  display: flex;
+  flex-wrap: wrap;
+}
+.solution .icons-panel .icon-container {
+  padding: 20px;
 }
 
 /*# sourceMappingURL=home.css.map */

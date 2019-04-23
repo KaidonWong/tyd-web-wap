@@ -15,9 +15,18 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
+  width: 100%;
+  overflow: hidden;
   margin: 0;
   padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
 }
 
 .header {
@@ -30,7 +39,7 @@ html, body {
 .header .logo {
   margin: 10px;
   width: 90px;
-  height: 60%;
+  height: 64%;
   background: url("../asset/logo.png") no-repeat;
   background-size: 100% 100%;
 }
@@ -43,15 +52,22 @@ html, body {
   font-size: 2em;
   color: #9d9d9d;
 }
-
-.submenu {
-  width: 300px;
-  height: 500px;
-  font-size: 1.3em;
+.header .submenu {
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  right: -160px;
+  width: 160px;
+  font-size: 1.2em;
   background-color: rgba(0, 0, 0, 0.7);
+  transition: right 0.3s ease-in-out;
 }
-.submenu div {
-  line-height: 2;
+.header .submenu div {
+  color: #ffffff;
+  margin: 20px;
+}
+.header .submenu.active {
+  right: 0px;
 }
 
 /*# sourceMappingURL=head.css.map */

@@ -1,5 +1,52 @@
-.ban {
-    background: url("../asset/ban_index01.jpg") no-repeat;
-    background-size: cover;
-    padding-top: 50%;
+.banners {
+	width: calc(100% * 5);
+	.banner {
+		float: left;
+		width: calc(100% / 5);
+		transform: translateX(-100%);
+		transition: transform 0.5s;
+		.img-container {
+			position: relative;
+			width: 100%;
+			padding-bottom: 50%;
+			> img {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+.section {
+	margin-top: 20px;
+}
+.solution {
+	.title {
+		width: 200px;
+		margin: 0 auto;
+		> div {
+            text-align: center;
+            &:nth-of-type(1) {
+                font-size: 1.2em;
+            }
+            &:nth-of-type(2) {
+                color: #999999;
+                font-size: 0.9em;
+            }
+            &:nth-of-type(3) {
+                height: 2px;
+                width: 50px;
+                margin: 7px auto 0 auto;
+                background-color: #d40e10;
+            }
+		}
+    }
+    .icons-panel {
+        display: flex;
+        flex-wrap: wrap;
+
+        .icon-container {
+            padding: 20px;
+        }
+    }
 }
