@@ -18,9 +18,11 @@ function bannerOnTouchMove(e) {
     }
 	if (Math.abs(bannerOffsetX) > 20) {
 		if (bannerOffsetX < 0) {
-			bannerSwipeLeft();
+            bannerSwipeLeft();
+            dotTurnRight();
 		} else {
-			bannerSwipeRight();
+            bannerSwipeRight();
+            dotTurnLeft();
 		}
 	}
 }
@@ -63,6 +65,27 @@ function bannerSwipeRight() {
 	}
 }
 
+function dotTurnLeft(){
+    let index = $('.banner-navs>div').index($(".active"));
+    index --;
+    if(index == -1) {
+        index = 2;
+    }
+    $('.banner-navs').children().removeClass('active');
+    $($('.banner-navs').children().get(index)).addClass('active');
+}
+
+function dotTurnRight(){
+    let index = $('.banner-navs>div').index($(".active"));
+    index ++;
+    if(index == 3) {
+        index = 0;
+    }
+    $('.banner-navs').children().removeClass('active');
+    $($('.banner-navs').children().get(index)).addClass('active');
+}
+
+
 $().ready(function() {
 	$(".banners").on("touchstart", bannerOnTouchStart);
 	$(".banners").on(
@@ -70,7 +93,8 @@ $().ready(function() {
 		_.debounce(e => {
 			bannerOnTouchMove(e);
 		}, 50)
-	);
+    );
+    // setInterval(bannerSwipeLeft,5000);
 
 	window.onorientationchange = function() {
 		if (window.orientation == 180 || window.orientation == 0) {

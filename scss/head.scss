@@ -12,7 +12,7 @@
 		.title {
 			visibility: visible;
 		}
-	}
+    }
 }
 * {
 	box-sizing: border-box;
@@ -20,7 +20,7 @@
 html,
 body {
     width:100%;
-    overflow: hidden;
+    // overflow: hidden;
 	margin: 0;
 	padding: 0;
 }
@@ -28,6 +28,9 @@ body {
     content: '';
     clear: both;
     display: block;
+}
+a {
+    text-decoration: none;
 }
 .header {
 	position: relative;
@@ -61,11 +64,33 @@ body {
 		background-color: rgba($color: #000000, $alpha: 0.7);
         transition: right 0.3s ease-in-out;
         div {
-            color: #ffffff;
-            margin: 20px;
+            a {
+                display: block;
+                color: #ffffff;
+                margin: 10px;
+            }
         }
         &.active {
             right: 0px;
         }
 	}
+}
+
+.more-button{
+    display: inline-block;
+    padding: 0px 4px 2px 4px;
+
+    border: 1px solid #d40e10;
+    border-radius: 3px;
+    a {
+        color: #d40e10;
+        text-decoration: none;
+        font-size: 0.9em;
+    }
+    &:hover{
+        background-color: #d40e10;
+        >a {
+            color: #ffffff;
+        }
+    }
 }

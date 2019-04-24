@@ -18,7 +18,6 @@
 html,
 body {
   width: 100%;
-  overflow: hidden;
   margin: 0;
   padding: 0;
 }
@@ -27,6 +26,10 @@ body {
   content: "";
   clear: both;
   display: block;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header {
@@ -62,12 +65,31 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   transition: right 0.3s ease-in-out;
 }
-.header .submenu div {
+.header .submenu div a {
+  display: block;
   color: #ffffff;
-  margin: 20px;
+  margin: 10px;
 }
 .header .submenu.active {
   right: 0px;
+}
+
+.more-button {
+  display: inline-block;
+  padding: 0px 4px 2px 4px;
+  border: 1px solid #d40e10;
+  border-radius: 3px;
+}
+.more-button a {
+  color: #d40e10;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+.more-button:hover {
+  background-color: #d40e10;
+}
+.more-button:hover > a {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=head.css.map */
