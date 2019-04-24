@@ -96,7 +96,9 @@ $().ready(function() {
     );
     // setInterval(bannerSwipeLeft,5000);
 
-	window.onorientationchange = function() {
+    new IScroll('#forIScroll', { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false });
+    
+    window.onorientationchange = function() {
 		if (window.orientation == 180 || window.orientation == 0) {
 			// alert('竖屏状态！');
 		}
