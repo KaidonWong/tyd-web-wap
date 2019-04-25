@@ -150,23 +150,6 @@
     }
 }
 
-@media screen and (orientation: portrait) {
-	/*竖屏 css*/
-    .news{
-        .para {
-            height: 1.8em;
-        }
-    }
-}
-@media screen and (orientation: landscape) {
-	/*横屏 css*/
-    .news{
-        .para {
-            height: 3.8em;
-        }
-    }
-}
-
 .news {
     margin-top: -60px;
     .news-panel {
@@ -176,7 +159,7 @@
         box-shadow: 0px 0px 4px #bbbbbb;
         .news-img-container {
             float: right;
-            width: 35%;
+            width: 40%;
             .news-img {
                 position: relative;
                 padding-bottom: 60%;
@@ -197,14 +180,23 @@
         }
         .news-time {
             color: #666666;
-            font-size:0.6em;
+            font-size:0.8em;
         }
         .para {
-            margin-top: 7px;
-            color: #555555;
-            font-size: 0.9em;
-            line-height: 1;
-            overflow: hidden;
+            b{
+                margin-top: 3px;
+                color: #555555;
+                font-size: 0.9em;
+                font-weight: normal;
+                line-height: 1;
+                overflow: hidden;
+            }
+            span {
+                display: inline-block;
+                color: #d40e10;
+                font-size: 0.9em;
+                line-height: 1;
+            }
         }
     }
 }

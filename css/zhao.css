@@ -1,0 +1,124 @@
+.banner {
+  position: relative;
+  padding-bottom: 28.8%;
+}
+.banner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.navigations {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 20px auto;
+}
+.navigations .navigation {
+  width: 20%;
+  max-width: 70px;
+}
+.navigations .navigation .img-container {
+  position: relative;
+  padding-bottom: 100%;
+}
+.navigations .navigation .img-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.navigations .navigation .img-container img:nth-of-type(1) {
+  visibility: visible;
+}
+.navigations .navigation .img-container img:nth-of-type(2) {
+  visibility: hidden;
+}
+.navigations .navigation > div:nth-of-type(2) {
+  font-size: 0.8em;
+  text-align: center;
+}
+.navigations .navigation.on img:nth-of-type(2) {
+  visibility: visible;
+}
+.navigations .navigation.on img:nth-of-type(1) {
+  visibility: hidden;
+}
+.navigations .navigation.on > div:nth-of-type(2) {
+  color: #d40e10;
+}
+
+.section {
+  width: 90%;
+  margin: 40px auto 0 auto;
+  display: none;
+}
+
+.zpxx {
+  display: block;
+}
+
+.wyyp {
+  display: none;
+}
+.wyyp label {
+  display: block;
+  margin: 10px;
+}
+.wyyp label input[type=text] {
+  -webkit-appearance: none;
+  line-height: 1.5;
+  font-size: 1em;
+  width: 150px;
+  border: 1px solid #999999;
+}
+.wyyp label textarea {
+  -webkit-appearance: none;
+  font-size: 1em;
+  width: 60%;
+  border: 1px solid #999999;
+  vertical-align: bottom;
+}
+.wyyp label .name {
+  display: inline-block;
+  width: 80px;
+}
+.wyyp label span {
+  color: #d40e10;
+}
+.wyyp label .yzm {
+  display: inline-block;
+  width: 50px;
+  vertical-align: bottom;
+}
+.wyyp label .yzm img {
+  width: 100%;
+  height: 100%;
+}
+.wyyp .more-button {
+  width: 80px;
+}
+.wyyp .more-button a {
+  font-size: 1.1em;
+}
+
+.yrln > div:nth-of-type(2n-1) {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5em;
+}
+.yrln > div:nth-of-type(2) {
+  padding: 10px;
+  text-align: center;
+}
+.yrln > div:nth-of-type(4) > div {
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 12%;
+}
+.yrln > div:nth-of-type(4) > div img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=zhao.css.map */

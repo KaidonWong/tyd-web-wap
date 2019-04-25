@@ -20,7 +20,7 @@
 html,
 body {
     width:100%;
-    overflow: hidden;
+    // overflow: hidden;
 	margin: 0;
 	padding: 0;
 }
@@ -85,7 +85,7 @@ a {
     a {
         color: #d40e10;
         text-decoration: none;
-        font-size: 0.9em;
+        font-size: 1em;
     }
     &:hover{
         background-color: #d40e10;

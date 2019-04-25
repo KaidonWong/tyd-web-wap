@@ -2,27 +2,26 @@ var bannerStartX, bannerStartY;
 var bannerCurrentLocation = 1;
 
 function bannerOnTouchStart(e) {
-    bannerStartX = e.originalEvent.changedTouches[0].pageX;
-    bannerStartY = e.originalEvent.changedTouches[0].pageY;
+	bannerStartX = e.originalEvent.changedTouches[0].pageX;
+	bannerStartY = e.originalEvent.changedTouches[0].pageY;
 }
 
 function bannerOnTouchMove(e) {
-	
 	let bannerEndX = e.originalEvent.changedTouches[0].pageX;
 	let bannerEndY = e.originalEvent.changedTouches[0].pageY;
 	let bannerOffsetX = bannerEndX - bannerStartX;
 	let bannerOffsetY = bannerEndY - bannerStartY;
 	if (Math.abs(bannerOffsetY) > 20) {
-        // 滚页操作
+		// 滚页操作
 		return;
-    }
+	}
 	if (Math.abs(bannerOffsetX) > 20) {
 		if (bannerOffsetX < 0) {
-            bannerSwipeLeft();
-            dotTurnRight();
+			bannerSwipeLeft();
+			dotTurnRight();
 		} else {
-            bannerSwipeRight();
-            dotTurnLeft();
+			bannerSwipeRight();
+			dotTurnLeft();
 		}
 	}
 }
@@ -65,26 +64,53 @@ function bannerSwipeRight() {
 	}
 }
 
-function dotTurnLeft(){
-    let index = $('.banner-navs>div').index($(".active"));
-    index --;
-    if(index == -1) {
-        index = 2;
-    }
-    $('.banner-navs').children().removeClass('active');
-    $($('.banner-navs').children().get(index)).addClass('active');
+function dotTurnLeft() {
+	let index = $(".banner-navs>div").index($(".active"));
+	index--;
+	if (index == -1) {
+		index = 2;
+	}
+	$(".banner-navs")
+		.children()
+		.removeClass("active");
+	$(
+		$(".banner-navs")
+			.children()
+			.get(index)
+	).addClass("active");
 }
 
-function dotTurnRight(){
-    let index = $('.banner-navs>div').index($(".active"));
-    index ++;
-    if(index == 3) {
-        index = 0;
-    }
-    $('.banner-navs').children().removeClass('active');
-    $($('.banner-navs').children().get(index)).addClass('active');
+function dotTurnRight() {
+	let index = $(".banner-navs>div").index($(".active"));
+	index++;
+	if (index == 3) {
+		index = 0;
+	}
+	$(".banner-navs")
+		.children()
+		.removeClass("active");
+	$(
+		$(".banner-navs")
+			.children()
+			.get(index)
+	).addClass("active");
 }
 
+function adjustPara() {
+	$(".para b").each(function() {
+        let width = $('.news-img-container').css("width");
+        let height = $('.news-img-container').css("height");
+        width = width.split("px")[0];
+        width = Number.parseInt(width)
+        height = height.split("px")[0];
+        height = Number.parseInt(height);
+        let square = width * height;
+        square = square/400;
+		let text = $(this).text();
+		text = text.slice(0, square);
+		$(this).text(text);
+	});
+}
 
 $().ready(function() {
 	$(".banners").on("touchstart", bannerOnTouchStart);
@@ -93,12 +119,18 @@ $().ready(function() {
 		_.debounce(e => {
 			bannerOnTouchMove(e);
 		}, 50)
-    );
-    // setInterval(bannerSwipeLeft,5000);
+	);
+	// setInterval(bannerSwipeLeft,5000);
 
-    new IScroll('#forIScroll', { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false });
-    
-    window.onorientationchange = function() {
+	new IScroll("#forIScroll", {
+		eventPassthrough: true,
+		scrollX: true,
+		scrollY: false,
+		preventDefault: false
+	});
+    adjustPara();
+
+	window.onorientationchange = function() {
 		if (window.orientation == 180 || window.orientation == 0) {
 			// alert('竖屏状态！');
 		}
