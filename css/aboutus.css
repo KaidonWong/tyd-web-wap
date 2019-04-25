@@ -8,4 +8,45 @@
   height: 100%;
 }
 
+.menus {
+  padding: 20px;
+  background-color: #d7dfe1;
+}
+.menus .menu {
+  float: left;
+  width: 20%;
+  height: 60%;
+  margin: 2.5%;
+  padding: 2.5% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.menus .menu .img-width {
+  width: 50%;
+}
+.menus .menu .img-width .img-container {
+  position: relative;
+  padding-bottom: 100%;
+}
+.menus .menu .img-width .img-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+}
+.menus .menu .menu-title {
+  font-size: 1em;
+  text-align: center;
+  color: #666666;
+}
+.menus .menu.on {
+  background-color: #ffffff;
+  border-radius: 30%;
+}
+.menus .menu.on .menu-title {
+  color: #d40e10;
+}
+
 /*# sourceMappingURL=aboutus.css.map */
