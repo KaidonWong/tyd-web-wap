@@ -17,7 +17,6 @@
   width: 20%;
   height: 60%;
   margin: 2.5%;
-  padding: 2.5% 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -36,14 +35,16 @@
   height: 100%;
   visibility: visible;
 }
+.menus .menu .img-width .img-container img:nth-of-type(2) {
+  visibility: hidden;
+}
 .menus .menu .menu-title {
   font-size: 1em;
   text-align: center;
   color: #666666;
 }
-.menus .menu.on {
-  background-color: #ffffff;
-  border-radius: 30%;
+.menus .menu.on img:nth-of-type(2) {
+  visibility: visible;
 }
 .menus .menu.on .menu-title {
   color: #d40e10;
