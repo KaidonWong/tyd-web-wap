@@ -11,6 +11,8 @@ $().ready(function() {
         }
     });
 
-
-
+    $('.zpxx .content').on('click','.line',function(e){
+        $(this).siblings('.line').removeClass('selected');
+        $(this).toggleClass('selected');
+    });
 });
