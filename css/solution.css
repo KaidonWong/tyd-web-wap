@@ -30,4 +30,8 @@
   background-color: #d40e10;
 }
 
+.panel > div {
+  display: inline-block;
+}
+
 /*# sourceMappingURL=solution.css.map */
