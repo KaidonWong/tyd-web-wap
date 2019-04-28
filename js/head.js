@@ -8,3 +8,7 @@ $("#head-menu").on("click", function(e) {
 	}
 	$(".submenu").toggleClass("active");
 });
+
+$(".header .logo").on("click", function(e) {
+    window.location='./home.html';
+})

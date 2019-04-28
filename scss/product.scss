@@ -1,0 +1,245 @@
+.banner {
+	position: relative;
+	padding-bottom: 28.8%;
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.title {
+	position: relative;
+	width: 210px;
+	margin: 20px auto;
+	> div {
+		text-align: center;
+		&:nth-of-type(1) {
+			font-size: 1.2em;
+		}
+		&:nth-of-type(2) {
+			color: #999999;
+			font-size: 0.9em;
+		}
+		&:nth-of-type(3) {
+			height: 2px;
+			width: 50px;
+			margin: 7px auto 0 auto;
+			background-color: #d40e10;
+		}
+	}
+}
+
+.panels {
+	width: 90%;
+	max-width: 500px;
+	margin: 0 auto;
+	.panel {
+		float: left;
+		width: 33%;
+		padding: 2%;
+		margin-bottom: 20px;
+		.img-container {
+			margin: 0 auto;
+			width: 80%;
+			.img {
+				position: relative;
+				padding-bottom: 100%;
+				img {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+				}
+			}
+		}
+		.panel-title {
+			font-size: 0.8em;
+			text-align: center;
+			height: 1.6em;
+		}
+		&:nth-of-type(1),
+		&:nth-of-type(5) {
+			.img-container {
+				width: 50%;
+				.img {
+					padding-bottom: 160%;
+				}
+			}
+		}
+		&:nth-of-type(4) {
+			.img-container {
+				width: 60%;
+				.img {
+					padding-bottom: 133%;
+				}
+			}
+		}
+	}
+}
+
+.section {
+	.top-banner {
+		background-color: #49648f;
+		padding: 5% 5%;
+		.section-title {
+			float: right;
+			width: 70%;
+			min-width: 240px;
+			> div {
+				color: #ffffff;
+				text-align: center;
+			}
+			.first-line {
+				font-size: 1.5em;
+			}
+			.second-line {
+				font-size: 0.9em;
+				opacity: 0.6;
+			}
+		}
+	}
+	.img-position {
+        margin-top: -90px;
+        width: 50%;
+		.img-container {
+			float: right;
+			width: 100px;
+			.img {
+				position: relative;
+				padding-bottom: 126%;
+				img {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+				}
+			}
+		}
+    }
+}
+.gdzt,.zwdb {
+    .img-position {
+        .img-container {
+            width: 70px;
+            .img {
+                padding-bottom: 180%;
+            }
+        }
+    }
+}
+
+.tzsz,.wxcs {
+    .img-position {
+        .img-container {
+            width: 110px;
+            .img {
+                padding-bottom: 90%;
+            }
+        }
+    }
+}
+
+.section {
+    display: none;
+    .intro {
+        width: 30%;
+        max-width: 150px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        color: #ffffff;
+        line-height: 2;
+        text-align: center;
+        background-color: #d40e10;
+        border-radius: 3px;
+    }
+    .para {
+        padding-left: 20px;
+        padding-right: 20px;
+        .subtitle {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #d40e10;
+            font-size: 1.2em;
+            letter-spacing: 2px;
+        }
+        .subtitle2 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .content {
+            line-height: 1.6em;
+            color: #707070;
+        }
+        .indent {
+            text-indent: 2em;
+        }
+    }
+    table {
+        width: 98%;
+        margin: 20px auto;
+        tr {
+            td {
+                padding: 3px;
+                font-size: 0.8em;
+                color: #707070;
+                &:nth-of-type(even) {
+                    //  width: 10%;
+                }
+                &:nth-of-type(odd) {
+                     width: 20%;
+                }
+            }
+
+        }
+    }
+    .diagram-container {
+        width: 100%;
+        margin: 10px auto;
+        .diagram {
+            position: relative;
+            padding-bottom: 50%;
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.ldsqnq {
+    .diagram-container {
+        .diagram {
+            padding-bottom: 80%;
+        }
+    }
+}
+
+.czsqnq {
+    .diagram-container {
+        .diagram {
+            padding-bottom: 105%;
+        }
+    }
+}
+
+.wxcs {
+    .chatu1 {
+        .diagram {
+            padding-bottom: 55%;
+        }
+    }
+    .chatu2 {
+        .diagram {
+            padding-bottom: 170%;
+        }
+    }
+}
+
+.gdzt {
+    .diagram-container {
+        .diagram {
+            padding-bottom: 160%;
+        }
+    }
+}

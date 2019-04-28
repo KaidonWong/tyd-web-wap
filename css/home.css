@@ -41,6 +41,7 @@
 }
 .section .title {
   position: relative;
+  z-index: 0;
   width: 210px;
   margin: 0 auto;
 }
@@ -176,7 +177,7 @@
   color: #666666;
   font-size: 0.8em;
 }
-.news .news-panel .para b {
+.news .news-panel .para .news-content {
   margin-top: 3px;
   color: #555555;
   font-size: 0.9em;
@@ -184,8 +185,10 @@
   line-height: 1;
   overflow: hidden;
 }
-.news .news-panel .para span {
+.news .news-panel .para .news-xq {
   display: inline-block;
+}
+.news .news-panel .para .news-xq a {
   color: #d40e10;
   font-size: 0.9em;
   line-height: 1;

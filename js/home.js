@@ -97,7 +97,7 @@ function dotTurnRight() {
 }
 
 function adjustPara() {
-	$(".para b").each(function() {
+	$(".para .news-content").each(function() {
         let width = $('.news-img-container').css("width");
         let height = $('.news-img-container').css("height");
         width = width.split("px")[0];
@@ -105,10 +105,10 @@ function adjustPara() {
         height = height.split("px")[0];
         height = Number.parseInt(height);
         let square = width * height;
-        square = square/400;
+        square = square/450;
 		let text = $(this).text();
 		text = text.slice(0, square);
-		$(this).text(text);
+		$(this).text(text+'...');
 	});
 }
 
@@ -129,6 +129,16 @@ $().ready(function() {
 		preventDefault: false
 	});
     adjustPara();
+
+    $('.solution').on('click','.icon-container',function(e){
+        let name =$(this).attr('name');
+        window.location=`./solution.html?panel=${name}`;
+    })
+
+    $('.product').on('click','.prod-container',function(e){
+        let name =$(this).attr('name');
+        window.location=`./product.html?panel=${name}`;
+    })
 
 	window.onorientationchange = function() {
 		if (window.orientation == 180 || window.orientation == 0) {

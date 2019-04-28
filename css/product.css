@@ -1,0 +1,209 @@
+.banner {
+  position: relative;
+  padding-bottom: 28.8%;
+}
+.banner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  position: relative;
+  width: 210px;
+  margin: 20px auto;
+}
+.title > div {
+  text-align: center;
+}
+.title > div:nth-of-type(1) {
+  font-size: 1.2em;
+}
+.title > div:nth-of-type(2) {
+  color: #999999;
+  font-size: 0.9em;
+}
+.title > div:nth-of-type(3) {
+  height: 2px;
+  width: 50px;
+  margin: 7px auto 0 auto;
+  background-color: #d40e10;
+}
+
+.panels {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.panels .panel {
+  float: left;
+  width: 33%;
+  padding: 2%;
+  margin-bottom: 20px;
+}
+.panels .panel .img-container {
+  margin: 0 auto;
+  width: 80%;
+}
+.panels .panel .img-container .img {
+  position: relative;
+  padding-bottom: 100%;
+}
+.panels .panel .img-container .img img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.panels .panel .panel-title {
+  font-size: 0.8em;
+  text-align: center;
+  height: 1.6em;
+}
+.panels .panel:nth-of-type(1) .img-container, .panels .panel:nth-of-type(5) .img-container {
+  width: 50%;
+}
+.panels .panel:nth-of-type(1) .img-container .img, .panels .panel:nth-of-type(5) .img-container .img {
+  padding-bottom: 160%;
+}
+.panels .panel:nth-of-type(4) .img-container {
+  width: 60%;
+}
+.panels .panel:nth-of-type(4) .img-container .img {
+  padding-bottom: 133%;
+}
+
+.section .top-banner {
+  background-color: #49648f;
+  padding: 5% 5%;
+}
+.section .top-banner .section-title {
+  float: right;
+  width: 70%;
+  min-width: 240px;
+}
+.section .top-banner .section-title > div {
+  color: #ffffff;
+  text-align: center;
+}
+.section .top-banner .section-title .first-line {
+  font-size: 1.5em;
+}
+.section .top-banner .section-title .second-line {
+  font-size: 0.9em;
+  opacity: 0.6;
+}
+.section .img-position {
+  margin-top: -90px;
+  width: 50%;
+}
+.section .img-position .img-container {
+  float: right;
+  width: 100px;
+}
+.section .img-position .img-container .img {
+  position: relative;
+  padding-bottom: 126%;
+}
+.section .img-position .img-container .img img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.gdzt .img-position .img-container, .zwdb .img-position .img-container {
+  width: 70px;
+}
+.gdzt .img-position .img-container .img, .zwdb .img-position .img-container .img {
+  padding-bottom: 180%;
+}
+
+.tzsz .img-position .img-container, .wxcs .img-position .img-container {
+  width: 110px;
+}
+.tzsz .img-position .img-container .img, .wxcs .img-position .img-container .img {
+  padding-bottom: 90%;
+}
+
+.section {
+  display: none;
+}
+.section .intro {
+  width: 30%;
+  max-width: 150px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  color: #ffffff;
+  line-height: 2;
+  text-align: center;
+  background-color: #d40e10;
+  border-radius: 3px;
+}
+.section .para {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.section .para .subtitle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #d40e10;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+.section .para .subtitle2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+.section .para .content {
+  line-height: 1.6em;
+  color: #707070;
+}
+.section .para .indent {
+  text-indent: 2em;
+}
+.section table {
+  width: 98%;
+  margin: 20px auto;
+}
+.section table tr td {
+  padding: 3px;
+  font-size: 0.8em;
+  color: #707070;
+}
+.section table tr td:nth-of-type(odd) {
+  width: 20%;
+}
+.section .diagram-container {
+  width: 100%;
+  margin: 10px auto;
+}
+.section .diagram-container .diagram {
+  position: relative;
+  padding-bottom: 50%;
+}
+.section .diagram-container .diagram img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.ldsqnq .diagram-container .diagram {
+  padding-bottom: 80%;
+}
+
+.czsqnq .diagram-container .diagram {
+  padding-bottom: 105%;
+}
+
+.wxcs .chatu1 .diagram {
+  padding-bottom: 55%;
+}
+.wxcs .chatu2 .diagram {
+  padding-bottom: 170%;
+}
+
+.gdzt .diagram-container .diagram {
+  padding-bottom: 160%;
+}
+
+/*# sourceMappingURL=product.css.map */

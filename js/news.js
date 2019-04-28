@@ -1,5 +1,5 @@
 function adjustPara() {
-    $(".para b").each(function() {
+	$(".para .news-content").each(function() {
         let width = $('.news-img-container').css("width");
         let height = $('.news-img-container').css("height");
         width = width.split("px")[0];
@@ -7,11 +7,11 @@ function adjustPara() {
         height = height.split("px")[0];
         height = Number.parseInt(height);
         let square = width * height;
-        square = square/400;
-        let text = $(this).text();
-        text = text.slice(0, square);
-        $(this).text(text);
-    });
+        square = square/450;
+		let text = $(this).text();
+		text = text.slice(0, square);
+		$(this).text(text+'...');
+	});
 }
 $().ready(function() {
     $('.two-type').on('click','div',function(){
