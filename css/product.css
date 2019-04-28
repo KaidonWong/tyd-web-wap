@@ -75,10 +75,11 @@
 .section .top-banner {
   background-color: #49648f;
   padding: 5% 5%;
+  margin-bottom: -15%;
 }
 .section .top-banner .section-title {
   float: right;
-  width: 70%;
+  width: 65%;
   min-width: 240px;
 }
 .section .top-banner .section-title > div {
@@ -93,12 +94,10 @@
   opacity: 0.6;
 }
 .section .img-position {
-  margin-top: -90px;
-  width: 50%;
+  margin-left: 8%;
 }
 .section .img-position .img-container {
-  float: right;
-  width: 100px;
+  width: 30%;
 }
 .section .img-position .img-container .img {
   position: relative;
@@ -111,14 +110,14 @@
 }
 
 .gdzt .img-position .img-container, .zwdb .img-position .img-container {
-  width: 70px;
+  width: 20%;
 }
 .gdzt .img-position .img-container .img, .zwdb .img-position .img-container .img {
   padding-bottom: 180%;
 }
 
 .tzsz .img-position .img-container, .wxcs .img-position .img-container {
-  width: 110px;
+  width: 27%;
 }
 .tzsz .img-position .img-container .img, .wxcs .img-position .img-container .img {
   padding-bottom: 90%;

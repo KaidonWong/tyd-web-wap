@@ -80,11 +80,12 @@
 .section {
 	.top-banner {
 		background-color: #49648f;
-		padding: 5% 5%;
+        padding: 5% 5%;
+        margin-bottom: -15%;
 		.section-title {
 			float: right;
-			width: 70%;
-			min-width: 240px;
+            width: 65%;
+            min-width: 240px;
 			> div {
 				color: #ffffff;
 				text-align: center;
@@ -99,11 +100,9 @@
 		}
 	}
 	.img-position {
-        margin-top: -90px;
-        width: 50%;
+        margin-left: 8%;
 		.img-container {
-			float: right;
-			width: 100px;
+            width: 30%;
 			.img {
 				position: relative;
 				padding-bottom: 126%;
@@ -119,7 +118,7 @@
 .gdzt,.zwdb {
     .img-position {
         .img-container {
-            width: 70px;
+            width: 20%;
             .img {
                 padding-bottom: 180%;
             }
@@ -130,7 +129,7 @@
 .tzsz,.wxcs {
     .img-position {
         .img-container {
-            width: 110px;
+            width: 27%;
             .img {
                 padding-bottom: 90%;
             }
