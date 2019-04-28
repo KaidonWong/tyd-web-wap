@@ -145,4 +145,7 @@ $().ready(function() {
     $(".modal-box").on("click", ()=>{
         $(".pop-up").css("visibility", "hidden");
     });
+    $(".close-button").on("click", ()=>{
+        $(".pop-up").css("visibility", "hidden");
+    });
 });

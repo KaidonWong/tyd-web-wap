@@ -30,8 +30,27 @@
     }
 }
 
-.panel {
-    >div {
-        display: inline-block;
+.panels {
+    width: 60%;
+    min-width: 300px;
+    margin: 20px auto;
+    .panel {
+        float: left;
+        width: 33%;
+        .img-container {
+            position: relative;
+            padding-bottom: 100%;
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .panel-title {
+            color: #ffffff;
+            text-align: center;
+            
+        }
+
     }
 }
