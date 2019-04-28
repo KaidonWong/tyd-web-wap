@@ -9,100 +9,102 @@
 }
 
 .navigations {
-    margin-top: 20px;
-    .two-type {
-        width: 220px;
-        margin: 0 auto;
-        >div {
-            float: left;
-            width: 50%;
-            line-height: 1.5;
-            color: #d40e10;
-            text-align: center;
-            border: 1px solid #d40e10;
-            &.on {
-                color: #ffffff;
-                background-color: #d40e10;
-            }
-        }
-        .left {
-            border-radius: 5px 0 0 5px;
-        }
-        .right {
-            margin-left: -1px;
-            border-radius: 0 5px 5px 0;
-        }
-    }
+	margin-top: 20px;
+	.two-type {
+		width: 220px;
+		margin: 0 auto;
+		> div {
+			float: left;
+			width: 50%;
+			line-height: 1.5;
+			color: #d40e10;
+			text-align: center;
+			border: 1px solid #d40e10;
+			&.on {
+				color: #ffffff;
+				background-color: #d40e10;
+			}
+		}
+		.left {
+			border-radius: 5px 0 0 5px;
+		}
+		.right {
+			margin-left: -1px;
+			border-radius: 0 5px 5px 0;
+		}
+	}
 }
 
 .section {
-    .news-panel {
-        width: 95%;
-        margin: 20px auto 0 auto;
-        padding: 10px;
-        box-shadow: 0px 0px 4px #bbbbbb;
-        .news-img-container {
-            float: right;
-            width: 40%;
-            .news-img {
-                position: relative;
-                padding-bottom: 60%;
-                img {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;   
-                }
-            }
-        }
-        .news-title {
-            color: #d40e10;
-            font-size: 1em;
-            width: 60%;
-            overflow: hidden;
-            white-space:nowrap;
-            text-overflow:ellipsis;
-        }
-        .news-time {
-            color: #666666;
-            font-size:0.8em;
-        }
-        .para {
-            b{
-                margin-top: 3px;
-                color: #555555;
-                font-size: 0.9em;
-                font-weight: normal;
-                line-height: 1;
-                overflow: hidden;
-            }
-            span {
-                display: inline-block;
-                color: #d40e10;
-                font-size: 0.9em;
-                line-height: 1;
-            }
-        }
-    }
-    .pagination {
-        margin-top: 20px;
-        .center {
-            text-align: center;
-            >a {
-                display: inline-block;
-                padding: 5px;
-                color: #666666;
-                border: 1px solid #cccccc;
-                border-radius: 3px;
-                text-align: center;
-                font-size: 1em;
-                line-height: 1;
-            }
-            >span {
-                font-size: 1em;
-                line-height: 1;
-                color: #666666;
-                padding: 0 10px 0 10px;
-            }
-        }
-    }
+	.news-panel {
+		width: 95%;
+		margin: 20px auto 0 auto;
+		padding: 10px;
+		box-shadow: 0px 0px 4px #bbbbbb;
+		.news-img-container {
+			float: right;
+			width: 40%;
+			.news-img {
+				position: relative;
+				padding-bottom: 60%;
+				img {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+		.news-title {
+			color: #d40e10;
+			font-size: 1em;
+			width: 60%;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+		.news-time {
+			color: #666666;
+			font-size: 0.8em;
+		}
+		.para {
+			.news-content {
+				margin-top: 3px;
+				color: #555555;
+				font-size: 0.9em;
+				font-weight: normal;
+				line-height: 1;
+				overflow: hidden;
+			}
+			.news-xq {
+				display: inline-block;
+				a {
+					color: #d40e10;
+					font-size: 0.9em;
+					line-height: 1;
+				}
+			}
+		}
+	}
+	.pagination {
+		margin-top: 20px;
+		.center {
+			text-align: center;
+			> a {
+				display: inline-block;
+				padding: 5px;
+				color: #666666;
+				border: 1px solid #cccccc;
+				border-radius: 3px;
+				text-align: center;
+				font-size: 1em;
+				line-height: 1;
+			}
+			> span {
+				font-size: 1em;
+				line-height: 1;
+				color: #666666;
+				padding: 0 10px 0 10px;
+			}
+		}
+	}
 }

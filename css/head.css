@@ -20,6 +20,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .clearfix::after {
@@ -33,11 +34,11 @@ a {
 }
 
 .header {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 50px;
+  width: 100%;
 }
 .header .logo {
   margin: 10px;
@@ -55,22 +56,26 @@ a {
   font-size: 2em;
   color: #9d9d9d;
 }
-.header .submenu {
+
+.submenu-container {
+  position: relative;
+}
+.submenu-container .submenu {
   position: absolute;
   z-index: 1;
-  top: 50px;
   right: -160px;
   width: 160px;
+  padding: 1px;
   font-size: 1.2em;
   background-color: rgba(0, 0, 0, 0.7);
-  transition: right 0.3s ease-in-out;
+  transition: right 0.2s ease-in-out;
 }
-.header .submenu div a {
+.submenu-container .submenu div a {
   display: block;
   color: #ffffff;
   margin: 10px;
 }
-.header .submenu.active {
+.submenu-container .submenu.active {
   right: 0px;
 }
 

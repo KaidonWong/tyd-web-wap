@@ -30,8 +30,117 @@
     }
 }
 
-.panel {
-    >div {
-        display: inline-block;
+.panels {
+    width: 350px;
+    height: 390px;
+    margin: 0 auto;
+    .panel {
+        float: left;
+        width: 29%;
+        margin: 5px;
+        position: relative;
+        .img-container {
+            position: relative;
+            padding-bottom: 100%;
+            margin-bottom: -40px;
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+        .panel-title {
+            position: relative;
+            text-align: center;
+            color: #ffffff;
+        }
+        &:nth-of-type(1) {
+            transform: scale(1);
+            left: 7%;
+            top: 10px;
+        }
+        &:nth-of-type(2) {
+            transform: scale(0.9);
+            left: 4%;
+            top: 40px;
+        }
+        &:nth-of-type(3) {
+            transform: scale(0.9);
+        }
+        &:nth-of-type(4) {
+            transform: scale(1.05);
+            top: 40px;
+        }
+        &:nth-of-type(5) {
+            transform: scale(1.3);
+            top: 60px;
+            left: 3%;
+        }
+        &:nth-of-type(6) {
+            transform: scale(1);
+            left: 4%;
+            top: 5px;
+        }
+        &:nth-of-type(7) {
+            transform: scale(1);
+            left: 25%;
+            top: 80px;
+        }
+        &:nth-of-type(8) {
+            transform: scale(1);
+            left: 30%;
+            top: 40px;
+        }
+    }
+}
+
+.section {
+    display: none;
+    padding: 20px;
+    .para {
+        .subtitle {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #d40e10;
+            font-size: 1.2em;
+            letter-spacing: 2px;
+        }
+        .subtitle2 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .content {
+            line-height: 1.6em;
+            color: #707070;
+        }
+        .indent {
+            text-indent: 2em;
+        }
+    }
+    .img-container {
+        width: 90%;
+        max-width: 600px;
+        margin: 10px auto;
+        .img {
+            position: relative;
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.zhcs {
+    .img {
+        padding-bottom: 70%;
+    }
+}
+.znjt {
+    .img {
+        padding-bottom: 100%;
     }
 }

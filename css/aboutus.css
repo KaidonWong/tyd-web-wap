@@ -14,9 +14,10 @@
 }
 .menus .menu {
   float: left;
-  width: 20%;
+  width: 21%;
   height: 60%;
-  margin: 2.5%;
+  margin: 2%;
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -33,18 +34,23 @@
   position: absolute;
   width: 100%;
   height: 100%;
+}
+.menus .menu .img-width .img-container img:nth-of-type(1) {
   visibility: visible;
 }
 .menus .menu .img-width .img-container img:nth-of-type(2) {
   visibility: hidden;
 }
 .menus .menu .menu-title {
-  font-size: 1em;
+  font-size: 0.9em;
   text-align: center;
   color: #666666;
 }
-.menus .menu.on img:nth-of-type(2) {
+.menus .menu.on .img-width .img-container img:nth-of-type(2) {
   visibility: visible;
+}
+.menus .menu.on .img-width .img-container img:nth-of-type(1) {
+  visibility: hidden;
 }
 .menus .menu.on .menu-title {
   color: #d40e10;
@@ -52,6 +58,7 @@
 
 .section {
   margin-top: 20px;
+  display: none;
 }
 .section .title {
   position: relative;
@@ -77,6 +84,7 @@
 .gsjj .section-panel .para {
   color: #666666;
   text-indent: 2em;
+  line-height: 1.6em;
 }
 .gsjj .section-panel .img-container {
   width: 90%;
@@ -99,6 +107,7 @@
 .dszzc .section-panel .para {
   color: #666666;
   text-indent: 2em;
+  line-height: 1.6em;
 }
 .dszzc .section-panel .img-container {
   width: 90%;
@@ -264,27 +273,37 @@
   height: 300px;
 }
 
-.gszz .section-panel, .gsry .section-panel, .gsrz .section-panel {
+.gszz .section-panel,
+.gsry .section-panel,
+.rz .section-panel {
   display: flex;
   flex-wrap: wrap;
   width: 91%;
   margin: 20px auto;
 }
-.gszz .section-panel .zz, .gsry .section-panel .zz, .gsrz .section-panel .zz {
+.gszz .section-panel .zz,
+.gsry .section-panel .zz,
+.rz .section-panel .zz {
   width: 30%;
   min-width: 150px;
   margin: 0 10px 20px 10px;
 }
-.gszz .section-panel .zz .paper-container .paper, .gsry .section-panel .zz .paper-container .paper, .gsrz .section-panel .zz .paper-container .paper {
+.gszz .section-panel .zz .paper-container .paper,
+.gsry .section-panel .zz .paper-container .paper,
+.rz .section-panel .zz .paper-container .paper {
   position: relative;
   padding-bottom: 70%;
 }
-.gszz .section-panel .zz .paper-container .paper img, .gsry .section-panel .zz .paper-container .paper img, .gsrz .section-panel .zz .paper-container .paper img {
+.gszz .section-panel .zz .paper-container .paper img,
+.gsry .section-panel .zz .paper-container .paper img,
+.rz .section-panel .zz .paper-container .paper img {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-.gszz .section-panel .zz .paper-title, .gsry .section-panel .zz .paper-title, .gsrz .section-panel .zz .paper-title {
+.gszz .section-panel .zz .paper-title,
+.gsry .section-panel .zz .paper-title,
+.rz .section-panel .zz .paper-title {
   margin-top: 5px;
   font-size: 0.9em;
   text-align: center;
@@ -298,7 +317,8 @@
   z-index: 1;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 .pop-up .modal-box {
   overflow: hidden;
@@ -307,6 +327,18 @@
   padding: 10px;
   background-color: #ffffff;
   border-radius: 10px;
+}
+.pop-up .modal-close {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 25px;
+}
+.pop-up .modal-close span {
+  color: #aaaaaa;
+  font-size: 2em;
+  line-height: 1.5em;
 }
 
 /*# sourceMappingURL=aboutus.css.map */
