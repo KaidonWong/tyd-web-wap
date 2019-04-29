@@ -1,0 +1,46 @@
+.banner {
+	position: relative;
+	padding-bottom: 28.8%;
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.section {
+    padding: 20px;
+    .news-title {
+        text-align: center;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    .news-time {
+        text-align: center;
+        font-size: 0.8em;
+        color: #666666;
+    }
+    .news-para {
+        margin: 10px 0;
+        text-indent: 2em;
+        font-size: 1em;
+        color: #333333;        
+    }
+    .img-container {
+        position: relative;
+        padding-bottom: 50%;
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.news-return {
+    text-align: right;
+    a {
+        color: #d40e10;
+        text-decoration: none;
+    }
+}

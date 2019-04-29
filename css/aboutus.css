@@ -100,6 +100,17 @@
   width: 100%;
   height: 100%;
 }
+.gsjj .partner-pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.gsjj .partner-pics .partner-pic {
+  height: 50px;
+}
+.gsjj .partner-pics .partner-pic img {
+  height: 100%;
+}
 
 .dszzc .section-panel {
   padding: 15px;

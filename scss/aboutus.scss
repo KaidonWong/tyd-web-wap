@@ -108,8 +108,19 @@
 					height: 100%;
 				}
 			}
-		}
-	}
+        }
+    }
+    .partner-pics {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .partner-pic {
+            height: 50px;
+            img {
+                height: 100%;
+            }
+        }
+    }
 }
 
 .dszzc {
